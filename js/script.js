@@ -29,7 +29,6 @@ const clothingItems = [
         return;
       }
       const totalPrice = selectedClothingItem.price * quantity; 
-      //alert(`Compraste ${quantity} ${selectedClothingItem.name}(s) por un total de $${totalPrice.toFixed(2)}.`);
       let confirmation = confirm(`Compraste ${quantity} ${selectedClothingItem.name}(s) por un total de $${totalPrice.toFixed(2)}.\nHaz click en "Aceptar" para confirmar tu compra\no de lo contrario en "Cancelar" para cancelar tu compra`);
       if (confirmation){
         alert('compra confirmada');
